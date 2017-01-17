@@ -31,12 +31,12 @@ class SingleMovie extends Component{
 		return(
 			<div className="col-sm-8">
 				<div>
-					<a href={this.state.currentMovieData.homepage} target="_blank">
 						<img src={posterPath} className="clicked-poster" />
-					</a>
 				</div>
 				<div className="col-sm-12 clicked-poster-text">
-					Click Picture to View Website
+					<a href={this.state.currentMovieData.homepage} target="_blank">
+						Click to View Website
+					</a>
 				</div>
 			</div>
 

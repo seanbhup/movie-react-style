@@ -34,9 +34,11 @@ class BootstrapNavBar extends Component{
 					    <li><Link to="popular">Popular</Link></li>
 					    <li><Link to="topRated">Top Rated</Link></li>
 					    <li>
-					    	<form onSubmit={this.handleSearchSubmit}>
-					    		<input type="text" placeholder="Search" className="search-box" />
-					    		Search for Movie
+					    	<form onSubmit={this.handleSearchSubmit} className="nav-form">
+					    		<input type="text" placeholder="Search Movie" className="search-box" />
+					    		<button type="submit" className="search-button">
+					    			Search
+					    		</button>
 					    	</form>
 					    </li>
     				</ul>

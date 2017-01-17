@@ -2,8 +2,17 @@ import React, { Component } from 'react'
 import { Link } from 'react-router';
 import Constants from './Constants';
 import Config from './Config';
+import $ from 'jquery';
 
 class SearchResults extends Component{
+
+	componentDidMount(){
+		var url = Constants.baseUrl + 'movies/search?q=' + this.props.params.movie.poster_path;
+		$.getJSON(url, (searchMovieData) => {
+			console.log(searchMovieData);
+		})
+	}
+
 	render(){
 		var imagePath = Constants.imageBase;
 		var posterLink = '/movie/';
