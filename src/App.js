@@ -33,7 +33,7 @@ class App extends Component {
     			<div className="row">
                     <BootstrapNavBar functionFromParent={this.handleSearch} />
                     {this.props.children}
-    			</div>	
+    			</div>
     		</div>
     	);
 	}

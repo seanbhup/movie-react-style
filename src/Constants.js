@@ -42,7 +42,10 @@ module.exports = {
     	{
 	    	buttonText: 'Liam Neeson\'s highest grossing R movies',
 	    	link: 'discover/movie?certification_country=US&certification=R&sort_by=revenue.desc&with_cast=3896'
-	    }
+	    },
+		{
+			buttonText: 'Iron Man and Cap',
+			link: 'discover/movie?with_people=3223,16828&sort_by=vote_average.desc'
+		}
     ]
 }
-
